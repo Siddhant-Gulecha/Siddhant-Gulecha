@@ -2,112 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddhant Gulecha - Resume</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 900px;
+            font-family: 'Charter', 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
             margin: 40px auto;
-            line-height: 1.5;
-            color: #111;
+            padding: 0 20px;
+            font-size: 14px;
         }
         h1 {
-            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             margin-bottom: 5px;
+            font-weight: normal;
         }
-        h2 {
-            font-size: 18px;
-            margin-top: 30px;
-            border-bottom: 2px solid #000;
-            padding-bottom: 4px;
-        }
-        .subtitle {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .contact {
+        .header-info {
+            text-align: center;
             margin-bottom: 20px;
         }
-        .contact a {
-            color: #000;
+        .header-info a {
+            color: black;
             text-decoration: none;
         }
-        .section-item {
-            margin-top: 10px;
+        .header-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-top: 15px;
+        }
+        h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+            padding-bottom: 2px;
+            font-weight: bold;
+        }
+        .subheading {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .subheading-detail {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 13.5px;
+            margin-bottom: 5px;
+        }
+        .date {
+            font-style: italic;
+            font-weight: normal;
         }
         ul {
-            margin-top: 8px;
-            padding-left: 20px;
+            margin-top: 5px;
+            padding-left: 25px;
         }
         li {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
-        .skills p {
-            margin: 4px 0;
+        .skills-item {
+            margin-bottom: 4px;
+        }
+        p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>SIDDHANT GULECHA</h1>
-    <div class="subtitle">Backend Software Engineering Intern | FastAPI (Python) | C++</div>
+    <header>
+        <h1>Siddhant Gulecha</h1>
+        <div class="header-info">
+            Cell: 9408733526 | 
+            Email: <a href="mailto:siddhant.gulecha05@gmail.com">siddhant.gulecha05@gmail.com</a><br>
+            GitHub: <a href="https://github.com/Siddhant-Gulecha">github.com/Siddhant-Gulecha</a> | 
+            LinkedIn: <a href="https://www.linkedin.com/in/siddhant-gulecha">linkedin.com/in/siddhant-gulecha</a> | 
+            LeetCode: <a href="https://leetcode.com/u/Ramuel">leetcode.com/u/Ramuel</a>
+        </div>
+    </header>
 
-    <div class="contact">
-        Email: siddhant.gulecha05@gmail.com<br>
-        GitHub: <a href="https://github.com/Siddhant-Gulecha" target="_blank">Siddhant-Gulecha</a>
-    </div>
+    <section>
+        <h2>Summary</h2>
+        <p>Backend-focused Computer Science undergraduate with hands-on experience building and optimizing FastAPI-based systems in production. Strong in API design, database performance tuning, and backend infrastructure. Proven ability to diagnose performance bottlenecks, eliminate inefficient query patterns, and build scalable logging and background processing pipelines.</p>
+    </section>
 
-    <h2>PROFESSIONAL SUMMARY</h2>
-    <p>
-        Backend-focused Computer Science undergraduate with hands-on experience building
-        and optimizing FastAPI-based systems in production. Strong in API design, database
-        performance tuning, and backend infrastructure. Proven ability to diagnose performance
-        bottlenecks, eliminate inefficient query patterns, and build scalable logging and background
-        processing pipelines.
-    </p>
+    <section>
+        <h2>Education</h2>
+        <div class="education-block">
+            <div class="subheading">
+                <span>VIT, Vellore</span>
+                <span class="date">August 2023 – May 2027</span>
+            </div>
+            <div class="subheading-detail">
+                <span>B.Tech (CSE) Specialization: Data Science</span>
+                <span>CGPA: 9.13</span>
+            </div>
+        </div>
+        <div class="education-block">
+            <div class="subheading">
+                <span>New Era Senior Secondary School (XII - CBSE)</span>
+                <span class="date">2023</span>
+            </div>
+            <div class="subheading-detail">
+                <span>Percentage: 84.6%</span>
+                <span></span>
+            </div>
+        </div>
+        <div class="education-block">
+            <div class="subheading">
+                <span>New Era Senior Secondary School (X - CBSE)</span>
+                <span class="date">2021</span>
+            </div>
+            <div class="subheading-detail">
+                <span>Percentage: 90.8%</span>
+                <span></span>
+            </div>
+        </div>
+    </section>
 
-    <h2>EDUCATION</h2>
-    <div class="section-item">
-        <strong>B.Tech in Computer Science and Engineering</strong> (2023 - 2027)<br>
-        Specialization: Data Science<br>
-        Vellore Institute of Technology, Vellore<br>
-        CGPA: 9.13 / 10
-    </div>
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-item"><strong>Languages:</strong> Python, C++, C, Java</div>
+        <div class="skills-item"><strong>Backend Frameworks:</strong> FastAPI, Spring Boot</div>
+        <div class="skills-item"><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</div>
+        <div class="skills-item"><strong>Tools & Platforms:</strong> Git, Linux, Docker</div>
+    </section>
 
-    <h2>WORK EXPERIENCE</h2>
-    <div class="section-item">
-        <strong>Software Development Intern — AdvaRisk</strong> (May 2025 - July 2025)
+    <section>
+        <h2>Experience</h2>
+        <div class="subheading">
+            <span>Software Development Intern — AdvaRisk</span>
+            <span class="date">May 2025 – July 2025</span>
+        </div>
+        <div class="subheading-detail">
+            <span></span>
+            <span>Pune, India</span>
+        </div>
         <ul>
             <li>Optimized FastAPI backend services by identifying and eliminating N+1 query patterns, reducing database load and improving API response latency.</li>
             <li>Engineered production-ready REST APIs with a focus on scalability, maintainability, and performance under concurrent usage.</li>
             <li>Developed and deployed a custom Celery worker to asynchronously export and stream application logs to a ClickHouse cluster, enabling centralized logging and analytics.</li>
             <li>Collaborated with backend engineers to tune ORM queries, indexing strategies, and request-handling logic for high-throughput workloads.</li>
         </ul>
-    </div>
+    </section>
 
-    <h2>PROJECTS</h2>
-    <div class="section-item">
-        <strong>E-Commerce Backend System</strong>
+    <section>
+        <h2>Projects</h2>
+        <div class="subheading">
+            <span>E-Commerce Backend System</span>
+            <span class="date">FastAPI, Python, React.js, PostgreSQL</span>
+        </div>
+        <div class="subheading-detail">
+            <span><a href="https://github.com/Siddhant-Gulecha/ecommerce_project_public" style="color: black; text-decoration: none;">github.com/Siddhant-Gulecha/ecommerce_project_public</a></span>
+            <span></span>
+        </div>
         <ul>
             <li>Architected and implemented a RESTful backend using FastAPI for product catalog management, cart operations, and order processing.</li>
             <li>Designed relational database schema and indexes to support concurrent access while minimizing query latency.</li>
             <li>Implemented structured API endpoints with clear separation of concerns between business logic, data access, and routing layers.</li>
-            <li>
-                GitHub:
-                <a href="https://github.com/Siddhant-Gulecha/ecommerce_project_public" target="_blank">
-                    ecommerce_project_public
-                </a>
-            </li>
         </ul>
-    </div>
-
-    <h2>TECHNICAL SKILLS</h2>
-    <div class="skills">
-        <p><strong>Languages:</strong> Java, Python, C++, C</p>
-        <p><strong>Backend Frameworks:</strong> FastAPI, SQLAlchemy, Spring Boot</p>
-        <p><strong>Databases:</strong> PostgreSQL, MySQL</p>
-        <p><strong>Tools & Platforms:</strong> Git, Linux, Docker</p>
-    </div>
+    </section>
 
 </body>
 </html>
