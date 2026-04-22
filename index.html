@@ -6,72 +6,98 @@
     <title>Siddhant Gulecha - Resume</title>
     <style>
         body {
-            font-family: 'Charter', 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-            line-height: 1.4;
-            color: #333;
+            font-family: 'Charter', 'Bitstream Charter', 'serif';
+            line-height: 1.3;
+            color: #000;
             max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            font-size: 14px;
+            margin: 0.5in auto;
+            padding: 0 0.5in;
+            font-size: 10pt;
         }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
         h1 {
             text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-variant: small-caps;
+            font-size: 24pt;
             margin-bottom: 5px;
             font-weight: normal;
         }
-        .header-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .header-info a {
-            color: black;
-            text-decoration: none;
-        }
-        .header-info a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-top: 15px;
-        }
+
         h2 {
-            font-size: 16px;
-            text-transform: uppercase;
-            border-bottom: 1px solid black;
+            font-variant: small-caps;
+            font-size: 12pt;
+            border-bottom: 1px solid #000;
+            margin-top: 15px;
             margin-bottom: 5px;
             padding-bottom: 2px;
-            font-weight: bold;
         }
+
+        .contact-info {
+            text-align: center;
+            font-size: 9pt;
+            margin-bottom: 15px;
+        }
+
+        .contact-info span {
+            margin: 0 5px;
+        }
+
+        .summary {
+            font-size: 9pt;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
         .subheading {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
             margin-top: 8px;
+            margin-bottom: 2px;
         }
-        .subheading-detail {
+
+        .subheading strong {
+            font-size: 10pt;
+        }
+
+        .subheading em {
+            font-size: 9pt;
+            font-style: italic;
+        }
+
+        .subheading-details {
             display: flex;
             justify-content: space-between;
-            font-style: italic;
-            font-size: 13.5px;
             margin-bottom: 5px;
         }
-        .date {
+
+        .subheading-details em {
+            font-size: 9pt;
             font-style: italic;
-            font-weight: normal;
         }
+
         ul {
-            margin-top: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
             padding-left: 25px;
         }
+
         li {
-            margin-bottom: 4px;
+            font-size: 9pt;
+            margin-bottom: 2px;
         }
-        .skills-item {
-            margin-bottom: 4px;
+
+        .skills-list {
+            list-style-type: none;
+            padding-left: 15px;
         }
-        p {
-            margin: 5px 0;
+
+        .skills-list li {
+            margin-bottom: 4px;
         }
     </style>
 </head>
@@ -79,10 +105,10 @@
 
     <header>
         <h1>Siddhant Gulecha</h1>
-        <div class="header-info">
+        <div class="contact-info">
             Cell: 9408733526 | 
-            Email: <a href="mailto:siddhant.gulecha05@gmail.com">siddhant.gulecha05@gmail.com</a><br>
-            GitHub: <a href="https://github.com/Siddhant-Gulecha">github.com/Siddhant-Gulecha</a> | 
+            Email: <a href="mailto:siddhant.gulecha05@gmail.com">siddhant.gulecha05@gmail.com</a> | 
+            GitHub: <a href="https://github.com/Siddhant-Gulecha">github.com/Siddhant-Gulecha</a><br>
             LinkedIn: <a href="https://www.linkedin.com/in/siddhant-gulecha">linkedin.com/in/siddhant-gulecha</a> | 
             LeetCode: <a href="https://leetcode.com/u/Ramuel">leetcode.com/u/Ramuel</a>
         </div>
@@ -90,65 +116,64 @@
 
     <section>
         <h2>Summary</h2>
-        <p>Systems and Backend Engineer with hands-on experience navigating and optimizing large production codebases. Proficient in C++ and Java, with a strong foundation in data structures, algorithms, and applied cryptography, frequently leveraging the C++ Standard Template Library to solve complex algorithmic challenges. Proven track record of designing highly concurrent, scalable backend architectures and optimizing multithreaded processing pipelines.}
-</p>
+        <p class="summary">
+            Backend-focused Computer Science undergraduate with hands-on experience building and optimizing FastAPI-based systems in production. Strong in API design, database performance tuning, and backend infrastructure. Proven ability to diagnose performance bottlenecks, eliminate inefficient query patterns, and build scalable logging and background processing pipelines.
+        </p>
     </section>
 
     <section>
         <h2>Education</h2>
-        <div class="education-block">
-            <div class="subheading">
-                <span>VIT, Vellore</span>
-                <span class="date">August 2023 – May 2027</span>
-            </div>
-            <div class="subheading-detail">
-                <span>B.Tech (CSE) Specialization: Data Science</span>
-                <span>CGPA: 9.13</span>
-            </div>
+        <div class="subheading">
+            <strong>VIT, Vellore</strong>
+            <em>August 2023 &ndash; May 2027</em>
         </div>
-        <div class="education-block">
-            <div class="subheading">
-                <span>New Era Senior Secondary School (XII - CBSE)</span>
-                <span class="date">2023</span>
-            </div>
-            <div class="subheading-detail">
-                <span>Percentage: 84.6%</span>
-                <span></span>
-            </div>
+        <div class="subheading-details">
+            <em>B.Tech (CSE) Specialization: Data Science</em>
+            <em>CGPA: 9.13</em>
         </div>
-        <div class="education-block">
-            <div class="subheading">
-                <span>New Era Senior Secondary School (X - CBSE)</span>
-                <span class="date">2021</span>
-            </div>
-            <div class="subheading-detail">
-                <span>Percentage: 90.8%</span>
-                <span></span>
-            </div>
+
+        <div class="subheading">
+            <strong>New Era Senior Secondary School (XII - CBSE)</strong>
+            <em>2023</em>
+        </div>
+        <div class="subheading-details">
+            <em>Percentage: 84.6%</em>
+            <em></em>
+        </div>
+
+        <div class="subheading">
+            <strong>New Era Senior Secondary School (X - CBSE)</strong>
+            <em>2021</em>
+        </div>
+        <div class="subheading-details">
+            <em>Percentage: 90.8%</em>
+            <em></em>
         </div>
     </section>
 
     <section>
         <h2>Technical Skills</h2>
-        <div class="skills-item"><strong>Languages:</strong> C++ (STL), Java, Python, C</div>
-        <div class="skills-item"><strong>Core Concepts:</strong> Data Structures & Algorithms, Concurrency & Multithreading, Applied Cryptography, Distributed Systems</div>
-        <div class="skills-item"><strong>Backend Frameworks:</strong> Spring Boot, FastAPI</div>
-        <div class="skills-item"><strong>Databases & Tools:</strong> PostgreSQL, MySQL, MongoDB, Git, Linux, Docker</div>
+        <ul class="skills-list">
+            <li><strong>Languages</strong>: Python, C++, C, Java, Go</li>
+            <li><strong>Backend Frameworks</strong>: FastAPI, Spring Boot</li>
+            <li><strong>Databases</strong>: PostgreSQL, MySQL, MongoDB</li>
+            <li><strong>Tools & Platforms</strong>: Git, Linux, Docker</li>
+        </ul>
     </section>
 
     <section>
         <h2>Experience</h2>
         <div class="subheading">
-            <span>Software Development Intern — AdvaRisk</span>
-            <span class="date">May 2025 – June 2025</span>
+            <strong>Software Development Intern</strong>
+            <em>May 2025 &ndash; June 2025</em>
         </div>
-        <div class="subheading-detail">
-            <span></span>
-            <span>Pune, India</span>
+        <div class="subheading-details">
+            <em>AdvaRisk</em>
+            <em>Pune, India</em>
         </div>
         <ul>
-            <li>Navigated and optimized a large-scale production codebase, identifying and eliminating N+1 query patterns to reduce database load and improve latency.</li>
-            <li>Engineered scalable REST APIs and implemented concurrent processing pipelines, ensuring thread-safe operations and high performance under heavy concurrent workloads.</li>
+            <li>Optimized FastAPI backend services by identifying and eliminating N+1 query patterns, reducing database load and improving API response latency.</li>
+            <li>Engineered production-ready REST APIs with a focus on scalability, maintainability, and performance under concurrent usage.</li>
             <li>Developed and deployed a custom Celery worker to asynchronously export and stream application logs to a ClickHouse cluster, enabling centralized logging and analytics.</li>
             <li>Collaborated with backend engineers to tune ORM queries, indexing strategies, and request-handling logic for high-throughput workloads.</li>
         </ul>
@@ -156,32 +181,32 @@
 
     <section>
         <h2>Projects</h2>
-        
         <div class="subheading">
-            <span>Quantum-Resilient Cryptography Architecture</span>
-            <span class="date">AES-256, SHAKE512, TPM 2.0</span>
+            <strong>E-Commerce Backend System</strong>
+            <em>FastAPI, Python, React.js, PostgreSQL</em>
         </div>
-        <div class="subheading-detail">
-            <span>Ongoing Academic Research</span>
-            <span></span>
-        </div>
-        <ul>
-            <li>Designing and researching a hybrid cryptographic architecture utilizing AES-256 and SHAKE512 to ensure robust data security.</li>
-            <li>Analyzing hardware-level security integration using TPM 2.0, demonstrating a strong understanding of fundamental cryptography and secure system design.</li>
-        </ul>
-
-        <div class="subheading">
-            <span>E-Commerce Backend System</span>
-            <span class="date">FastAPI, Python, React.js, PostgreSQL</span>
-        </div>
-        <div class="subheading-detail">
-            <span><a href="https://github.com/Siddhant-Gulecha/ecommerce_project_public" style="color: black; text-decoration: none;">github.com/Siddhant-Gulecha/ecommerce_project_public</a></span>
-            <span></span>
+        <div class="subheading-details">
+            <em><a href="https://github.com/Siddhant-Gulecha/ecommerce_project_public">github.com/Siddhant-Gulecha/ecommerce_project_public</a></em>
+            <em></em>
         </div>
         <ul>
             <li>Architected and implemented a RESTful backend using FastAPI for product catalog management, cart operations, and order processing.</li>
-            <li>Designed relational database schema and applied advanced data structures to support highly concurrent access while minimizing query latency.</li>
+            <li>Designed relational database schema and indexes to support concurrent access while minimizing query latency.</li>
             <li>Implemented structured API endpoints with clear separation of concerns between business logic, data access, and routing layers.</li>
+        </ul>
+
+        <div class="subheading">
+            <strong>Hot Reload Engine</strong>
+            <em>Go, fsnotify</em>
+        </div>
+        <div class="subheading-details">
+            <em><a href="https://github.com/Siddhant-Gulecha/hotreload">github.com/Siddhant-Gulecha/hotreload</a></em>
+            <em></em>
+        </div>
+        <ul>
+            <li>Developed a highly concurrent hot reload engine in Go to automatically rebuild and restart applications upon detecting file system changes.</li>
+            <li>Implemented efficient file monitoring using <code>fsnotify</code> with configurable ignore patterns and debounce logic to minimize redundant rebuilds.</li>
+            <li>Engineered robust process management with parallel teardown and boot, handling process groups and graceful shutdowns via OS signals.</li>
         </ul>
     </section>
 
