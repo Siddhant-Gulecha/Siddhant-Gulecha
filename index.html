@@ -6,8 +6,8 @@
     <title>Siddhant Gulecha - Resume</title>
     <style>
         body {
-            font-family: 'Charter', 'Bitstream Charter', 'serif';
-            line-height: 1.3;
+            font-family: 'Charter', 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+            line-height: 1.35;
             color: #000;
             max-width: 800px;
             margin: 0.5in auto;
@@ -16,40 +16,50 @@
         }
 
         a {
-            color: #000;
+            color: #002673;
             text-decoration: none;
         }
 
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+        }
+
         h1 {
-            text-align: center;
             font-variant: small-caps;
             font-size: 24pt;
-            margin-bottom: 5px;
+            margin: 0;
             font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 9pt;
+            line-height: 1.4;
         }
 
         h2 {
             font-variant: small-caps;
             font-size: 12pt;
             border-bottom: 1px solid #000;
-            margin-top: 15px;
-            margin-bottom: 5px;
+            margin-top: 14px;
+            margin-bottom: 6px;
             padding-bottom: 2px;
-        }
-
-        .contact-info {
-            text-align: center;
-            font-size: 9pt;
-            margin-bottom: 15px;
-        }
-
-        .contact-info span {
-            margin: 0 5px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
         }
 
         .summary {
             font-size: 9pt;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-align: justify;
         }
 
@@ -67,12 +77,13 @@
         .subheading em {
             font-size: 9pt;
             font-style: italic;
+            font-weight: normal;
         }
 
         .subheading-details {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .subheading-details em {
@@ -81,23 +92,52 @@
         }
 
         ul {
-            margin-top: 0;
-            margin-bottom: 10px;
-            padding-left: 25px;
+            margin-top: 2px;
+            margin-bottom: 8px;
+            padding-left: 20px;
         }
 
         li {
             font-size: 9pt;
             margin-bottom: 2px;
+            text-align: justify;
         }
 
         .skills-list {
             list-style-type: none;
-            padding-left: 15px;
+            padding-left: 0;
+            margin-top: 4px;
+            margin-bottom: 8px;
         }
 
         .skills-list li {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
+        }
+
+        .publication-item {
+            font-size: 9pt;
+            margin-top: 6px;
+            margin-bottom: 8px;
+            line-height: 1.35;
+        }
+
+        .publication-item strong {
+            font-size: 10pt;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .contact-info {
+                text-align: center;
+                margin-top: 8px;
+            }
+            .subheading, .subheading-details {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -106,58 +146,43 @@
     <header>
         <h1>Siddhant Gulecha</h1>
         <div class="contact-info">
-            Cell: 9408733526 | 
-            Email: <a href="mailto:siddhant.gulecha05@gmail.com">siddhant.gulecha05@gmail.com</a> | 
-            GitHub: <a href="https://github.com/Siddhant-Gulecha">github.com/Siddhant-Gulecha</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/siddhant-gulecha">linkedin.com/in/siddhant-gulecha</a> | 
-            LeetCode: <a href="https://leetcode.com/u/Ramuel">leetcode.com/u/Ramuel</a>
+            +91-9408733526 | <a href="mailto:siddhant.gulecha05@gmail.com">siddhant.gulecha05@gmail.com</a><br>
+            <a href="https://github.com/Siddhant-Gulecha" target="_blank" rel="noopener noreferrer">github.com/Siddhant-Gulecha</a> | 
+            <a href="https://www.linkedin.com/in/siddhant-gulecha" target="_blank" rel="noopener noreferrer">linkedin.com/in/siddhant-gulecha</a> | 
+            <a href="https://leetcode.com/u/Ramuel" target="_blank" rel="noopener noreferrer">leetcode.com/u/Ramuel</a>
         </div>
     </header>
 
     <section>
         <h2>Summary</h2>
         <p class="summary">
-            Backend-focused Computer Science undergraduate with hands-on experience building and optimizing FastAPI-based systems in production. Strong in API design, database performance tuning, and backend infrastructure. Proven ability to diagnose performance bottlenecks, eliminate inefficient query patterns, and build scalable logging and background processing pipelines.
+            Backend Software Engineer with 2 internships: reduced API latency from 5s to 200ms, built pipelines processing 1M+ daily logs, and classified network devices at 95% accuracy. Co-authored a research paper accepted at IEEE ICoICI 2026. Proficient in Python, Java, Spring Boot, FastAPI, and AWS.
         </p>
     </section>
 
     <section>
         <h2>Education</h2>
         <div class="subheading">
-            <strong>VIT, Vellore</strong>
-            <em>August 2023 &ndash; May 2027</em>
+            <strong>Vellore Institute of Technology, Vellore</strong>
+            <em>Aug 2023 &ndash; May 2027</em>
         </div>
         <div class="subheading-details">
-            <em>B.Tech (CSE) Specialization: Data Science</em>
-            <em>CGPA: 9.13</em>
+            <em>B.Tech in Computer Science (Data Science)</em>
+            <em>CGPA: 9.10/10.0</em>
         </div>
-
-        <div class="subheading">
-            <strong>New Era Senior Secondary School (XII - CBSE)</strong>
-            <em>2023</em>
-        </div>
-        <div class="subheading-details">
-            <em>Percentage: 84.6%</em>
-            <em></em>
-        </div>
-
-        <div class="subheading">
-            <strong>New Era Senior Secondary School (X - CBSE)</strong>
-            <em>2021</em>
-        </div>
-        <div class="subheading-details">
-            <em>Percentage: 90.8%</em>
-            <em></em>
-        </div>
+        <ul>
+            <li>Ranked 110th out of 2,411 students in VIT&apos;s coding assessment, securing selection as a &apos;Top Coder&apos; (top 15% cohort).</li>
+        </ul>
     </section>
 
     <section>
-        <h2>Technical Skills</h2>
+        <h2>Skills</h2>
         <ul class="skills-list">
-            <li><strong>Languages</strong>: Python, C++, C, Java</li>
-            <li><strong>Backend Frameworks</strong>: FastAPI, Spring Boot</li>
-            <li><strong>Databases</strong>: PostgreSQL, MySQL, MongoDB</li>
-            <li><strong>Tools & Platforms</strong>: Git, Linux, Docker</li>
+            <li><strong>Languages:</strong> Python, C++, C, Java</li>
+            <li><strong>Backend Frameworks:</strong> FastAPI, Spring Boot</li>
+            <li><strong>Databases:</strong> PostgreSQL, Redis, MySQL, MongoDB</li>
+            <li><strong>Tools &amp; Platforms:</strong> Git, Linux, Docker, AWS (EC2, S3), Apache Kafka, LangGraph, ChromaDB</li>
+            <li><strong>Core Concepts:</strong> Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Computer Networks</li>
         </ul>
     </section>
 
@@ -165,49 +190,75 @@
         <h2>Experience</h2>
         <div class="subheading">
             <strong>Software Development Intern</strong>
-            <em>May 2025 &ndash; June 2025</em>
+            <em>May 2026 &ndash; Jun 2026</em>
+        </div>
+        <div class="subheading-details">
+            <em>Inventum Technologies</em>
+            <em>Delhi, India</em>
+        </div>
+        <ul>
+            <li>Led the development of a Python telemetry service analyzing 500+ real-time radio statistics per minute from ClickHouse, automatically classifying network health verdicts using statistical anomaly detection.</li>
+            <li>Restructured backend data schemas to unify raw streaming network events into consolidated telemetry logs, reducing storage footprint by 30% and cutting query latencies.</li>
+            <li>Built a passive device fingerprinting engine that classified connected clients at 95% accuracy using DHCP, L2, and TCP SYN signature models.</li>
+            <li>Delivered 5 Python REST APIs powering real-time network diagnostic dashboards, historical health timelines, and client roaming event logs.</li>
+        </ul>
+
+        <div class="subheading">
+            <strong>Software Development Intern</strong>
+            <em>May 2025 &ndash; Jun 2025</em>
         </div>
         <div class="subheading-details">
             <em>AdvaRisk</em>
             <em>Pune, India</em>
         </div>
         <ul>
-            <li>Optimized FastAPI backend services by identifying and eliminating N+1 query patterns, reducing database load and improving API response latency.</li>
-            <li>Engineered production-ready REST APIs with a focus on scalability, maintainability, and performance under concurrent usage.</li>
-            <li>Developed and deployed a custom Celery worker to asynchronously export and stream application logs to a ClickHouse cluster, enabling centralized logging and analytics.</li>
-            <li>Collaborated with backend engineers to tune ORM queries, indexing strategies, and request-handling logic for high-throughput workloads.</li>
+            <li>Resolved N+1 query patterns in FastAPI services, reducing API response latency from 5s to 200ms.</li>
+            <li>Shipped 8+ production REST APIs handling concurrent financial data requests with 99.5% uptime.</li>
+            <li>Designed and deployed a Celery worker pipeline to stream 1M+ daily application logs to ClickHouse for real-time analytics and monitoring.</li>
+            <li>Partnered with senior engineers to optimize ORM queries and database indexing, improving average query execution time by 40%.</li>
         </ul>
     </section>
 
     <section>
         <h2>Projects</h2>
         <div class="subheading">
-            <strong>E-Commerce Backend System</strong>
-            <em>FastAPI, Python, React.js, PostgreSQL</em>
+            <strong>Eventix</strong>
+            <em>Java, Spring Boot, Apache Kafka, Redis, PostgreSQL, NGINX, Angular, Docker</em>
         </div>
         <div class="subheading-details">
-            <em><a href="https://github.com/Siddhant-Gulecha/ecommerce_project_public">github.com/Siddhant-Gulecha/ecommerce_project_public</a></em>
-            <em></em>
+            <em><a href="https://github.com/Siddhant-Gulecha/Eventix" target="_blank" rel="noopener noreferrer">github.com/Siddhant-Gulecha/Eventix</a></em>
+            <em>High-Concurrency Event Ticketing Platform</em>
         </div>
         <ul>
-            <li>Architected and implemented a RESTful backend using FastAPI for product catalog management, cart operations, and order processing.</li>
-            <li>Designed relational database schema and indexes to support concurrent access while minimizing query latency.</li>
-            <li>Implemented structured API endpoints with clear separation of concerns between business logic, data access, and routing layers.</li>
+            <li>Developed a containerized ticket booking platform, benchmarked at 10,000 requests/sec under simulated workloads using a decoupled asynchronous architecture.</li>
+            <li>Architected event-driven order processing via the Transactional Outbox Pattern, isolating database persistence from synchronous APIs and increasing order throughput by 35%.</li>
+            <li>Eliminated race conditions and double-bookings by implementing atomic distributed seat locks in Redis, handling 500+ concurrent booking attempts.</li>
+            <li>Reduced database storage footprint by 80% through a Just-In-Time ticket generation schema, deferring record creation until payment confirmation.</li>
+            <li>Set up end-to-end observability with Zipkin, Micrometer, and Prometheus/Grafana, achieving sub-second alert latency across 15+ service endpoints.</li>
         </ul>
 
         <div class="subheading">
-            <strong>Hot Reload Engine</strong>
-            <em>Go, fsnotify</em>
+            <strong>Osiris</strong>
+            <em>LangGraph, Python, ChromaDB, MCP</em>
         </div>
         <div class="subheading-details">
-            <em><a href="https://github.com/Siddhant-Gulecha/hotreload">github.com/Siddhant-Gulecha/hotreload</a></em>
-            <em></em>
+            <em><a href="https://github.com/Siddhant-Gulecha/Osiris" target="_blank" rel="noopener noreferrer">github.com/Siddhant-Gulecha/Osiris</a></em>
+            <em>Autonomous AI Network Troubleshooting Agent</em>
         </div>
         <ul>
-            <li>Developed a highly concurrent hot reload engine in Go to automatically rebuild and restart applications upon detecting file system changes.</li>
-            <li>Implemented efficient file monitoring using <code>fsnotify</code> with configurable ignore patterns and debounce logic to minimize redundant rebuilds.</li>
-            <li>Engineered robust process management with parallel teardown and boot, handling process groups and graceful shutdowns via OS signals.</li>
+            <li>Developed an autonomous network troubleshooting agent using LangGraph to automate diagnostics across 4 OSI layers, reducing manual triage time by 60%.</li>
+            <li>Programmed state machine routing logic with 12+ transition rules to enforce hypothesis tracking, evidence evaluation, and safe remote command execution via custom MCP servers.</li>
+            <li>Designed a state management schema to track hypotheses, command history, and verified network facts, reducing LLM token consumption by 40%.</li>
+            <li>Constructed a hybrid RAG pipeline using ChromaDB, indexing 50+ SOPs with document chunking, metadata tagging, and BM25 search for contextual retrieval.</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <div class="publication-item">
+            <strong>Federated Modality Aware Network for Robust Glioblastoma Survival Prediction</strong><br>
+            <span>Raj Inder Singh Gulati, Keerthika P, <strong>Siddhant Gulecha</strong>, Tanmay Baghel. <em>IEEE Intl. Conf. on Intelligent Cyber Physical Systems &amp; IoT (ICoICI)</em>, 2026. [Accepted]</span>
+        </div>
     </section>
 
 </body>
